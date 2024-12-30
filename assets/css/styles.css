@@ -1,42 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    background: #fdf6e3; /* Soft cream-like color */
+    color: #333;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
-    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: #1a73e8; /* Playful blue */
+}
+
+#hero {
+    height: 100vh;
+    background: #fdf6e3; /* Off-white background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
-header {
-    background: #333;
-    color: white;
-    padding: 2rem;
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
 }
 
-header img.profile-pic {
-    border-radius: 50%;
-    margin: 1rem 0;
+.hero-content p {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.hero-content img {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #get-to-know-me {
     margin: 2rem 0;
+    text-align: center;
 }
 
 .links img {
     width: 40px;
     margin: 0 10px;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
 }
 
 .links img:hover {
-    transform: scale(1.2);
+    transform: rotate(10deg) scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #skills {
     position: relative;
     margin: 3rem 0;
+    text-align: center;
 }
 
 .mind-map {
@@ -69,4 +93,17 @@ header img.profile-pic {
     border-radius: 50%;
     font-size: 0.9rem;
     text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
+
+.mind-map .bubble:hover {
+    transform: scale(1.2);
+    background: #ffadad; /* Coral */
+    cursor: pointer;
+}
+
+.bubble1 { top: 10%; left: 70%; }
+.bubble2 { top: 50%; left: 80%; }
+.bubble3 { top: 80%; left: 60%; }
+.bubble4 { top: 30%; left: 20%; }
+.bubble5 { top: 70%; left: 10%; }
