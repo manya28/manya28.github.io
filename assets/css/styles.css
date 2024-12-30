@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 2rem;
+}
+
+header img.profile-pic {
+    border-radius: 50%;
+    margin: 1rem 0;
+    width: 150px;
+    height: 150px;
+}
+
+#get-to-know-me {
+    margin: 2rem 0;
+}
+
+.links img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.links img:hover {
+    transform: scale(1.2);
+}
+
+#skills {
+    position: relative;
+    margin: 3rem 0;
+}
+
+.mind-map {
+    position: relative;
+    height: 300px;
+    margin: auto;
+    width: 80%;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mind-map .center {
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.mind-map .bubble {
+    position: absolute;
+    background: #6c757d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    text-align: center;
+}
