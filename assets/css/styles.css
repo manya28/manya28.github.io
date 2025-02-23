@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fdf6e3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #1a73e8;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.latest-post {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

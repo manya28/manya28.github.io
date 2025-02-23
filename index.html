@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Manya</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <img src="assets/img/manya.jpeg" alt="Manya Chadha" class="profile-pic">
+            <div class="intro-text">
+                <h1>Hi, I'm Manya!</h1>
+                <p>Welcome to my corner of the web! I am a data scientist who likes to share thoughts, pictures, and vibes over here. I am currently looking for opportunities as a data scientist, machine learning engineer, and/or AI engineer.</p>
+                <p>Check out my most recent post:</p>
+                <div class="latest-post">
+                    {% for post in site.posts limit:1 %}
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <p>{{ post.excerpt }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>© 2025 Manya Chadha</p>
+    </footer>
+</body>
+</html>
